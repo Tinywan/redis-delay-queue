@@ -1,0 +1,36 @@
+{
+    "name": "tinywan/redis-delay-queue",
+    "description": "The delayed task queue based on Redis 5.0 is realized through the zset && stream data structure",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tinywan",
+            "email": "756684177@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "ext-redis": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "tinywan\\redis\\": "src"
+        }
+    },
+    "require-dev": {
+        "ext-redis": "*",
+        "phpunit/phpunit": "~7.0|~8.0|~9.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tinywan\\redis\\tests\\": "tests"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
+}
